@@ -25,7 +25,7 @@ birthdays = {
 
 # Use the each method to iterate through it and print out a sentence stating each friends name and birthday
 birthdays.each do |friend, date|
-  puts "#{friend}'s birthday is #{date}"
+  puts "My friend #{friend} has a birthday on #{date}"
 end
 
 
@@ -42,4 +42,7 @@ login_statuses = {
 
 # Use the each method to iterate through it and print ONLY the names of friends who are "logged in"
 login_statuses.each do |name, active|
-  puts "#{name} == true"
+  if login_statuses => true
+    p name
+  end
+end
